@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<h1>Edit Form</h1>
+<h1>Edit</h1>
 <form action="../editok" method="post">
 <input type="hidden" name="seq" value="${u.seq}"/>
 <table id ="edit">

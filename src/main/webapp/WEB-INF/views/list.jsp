@@ -35,7 +35,7 @@
 </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<h1>예배예약현황</h1>
 
 <table id="list" width="90%">
 <tr>

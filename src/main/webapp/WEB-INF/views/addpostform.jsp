@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert  here</title>
 </head>
 <body>
 
-<h1>Add New Post</h1>
+<h1>Add New</h1>
 <form action="addok" method="post">
 	<table>
 		<tr><td>Worship:</td>
