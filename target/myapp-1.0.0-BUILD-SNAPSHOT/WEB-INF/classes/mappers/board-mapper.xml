@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Worship">
+	<insert id="insertWorship">
+		insert into WORSHIP (worship, worshiptime, writer, number, vaccine)
+		values
+		(#{worship} , #{worshiptime} , #{writer} , #{number}, #{vaccine})
+	</insert>
+	<update id="updateWorship">
+		update WORSHIP
+		set worship=#{worship}, worshiptime=#{worshiptime}, writer=#{writer}, number=#{number}, vaccine=#{vaccine}
+		where seq=#{seq}
+	</update>
+	<delete id="deleteWorship">
+		delete from WORSHIP where seq=#{seq}
+	</delete>
+	<select id="getWorship" resultType="worship">
+		select * from WORSHIP where seq=#{seq}
+	</select>
+	<select id="getWorshipList" resultType="worship">
+		select * from WORSHIP order by seq desc
+	</select>
+</mapper>

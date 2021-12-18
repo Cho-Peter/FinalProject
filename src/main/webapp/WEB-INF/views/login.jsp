@@ -1,23 +1,96 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+<title>Signin</title>
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+
+
+
+<!-- Bootstrap core CSS -->
+<link
+	href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+	rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon"
+	href="/docs/5.1/assets/img/favicons/apple-touch-icon.png"
+	sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png"
+	sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png"
+	sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon"
+	href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg"
+	color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
 <style>
-	img, label { display:inline-block;}
-	label{ width:130px}
-	button{ background-color:blue; color:white;font-size:15px}
+body {
+	font-family: 'Outfit', sans-serif;
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
 </style>
+
+
+<!-- Custom styles for this template -->
+<link
+	href="https://getbootstrap.com/docs/5.1/examples/sign-in/signin.css"
+	rel="stylesheet">
 </head>
-<body>
-<div style='width:100%;text-align:center;padding-top:100px'>
-<img src='../img/snowman.jpg' height="250">
-<form method="post" action="loginOk">
-<div><label>User ID: </label><input type='text' name='userid' /></div> 
-<div><label>Password: </label> <input type='password' name='password' /></div> 
-<button type='submit'>login</button>
-</form>
-</div>
-</body> 
+<body class="text-center">
+
+	<main class="form-signin">
+		<form method="post" action="loginOk">
+			<img src='../resources/img/HGU.png' height="100">
+			<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+			<div class="form-floating">
+				<input type="text" class="form-control" id="floatingInput"
+					placeholder="User ID" name="userid">
+			</div>
+			<div class="form-floating">
+				<input type="password" class="form-control" id="floatingPassword"
+					placeholder="Password" name='password'>
+			</div>
+			<button class="w-100 btn btn-lg btn-primary" type="submit">Sign
+				in</button>
+		</form>
+	</main>
+
+
+
+</body>
 </html>
